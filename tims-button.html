@@ -1,0 +1,41 @@
+<div>
+  <style>
+    .tims-button__container {
+      position: fixed;
+      bottom: 3%;
+      right: 3%;
+      background: darkgreen;
+      max-width: 10rem;
+      padding: 0.5rem;
+      margin: 1rem;
+      transition: height 1s;
+      z-index: 10;
+    }
+    .tims-button__label {
+      font-weight: 700;
+    }
+
+    .tims-button__explainer {
+      height: 0;
+      overflow-y: hidden;
+      font-style: italic;
+      font-size: 0.8rem;
+      font-weight: 300;
+      transition: height 1s;
+    }
+
+    .tims-button__container:hover .tims-button__explainer {
+      height: auto;
+    }
+  </style>
+  <div class="tims-button__container">
+    <div class="tims-button__explainer">
+      I want to give away my right for free shipping. Instead this website will
+      donate X EUR to a good cause.
+    </div>
+    <label for="freeReturnCheckbox" class="tims-button__label"
+      >Save the world !!1!</label
+    >
+    <input type="checkbox" id="freeReturnCheckbox" />
+  </div>
+</div>
